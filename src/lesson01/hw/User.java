@@ -7,7 +7,8 @@ import java.util.Arrays;
 /**
  * User - has name and skills.
  * <p>
- * Class with lombok annotations, except toString().
+ * Class with lombok annotations.
+ * <p>
  * With standard arrays.
  */
 @Data
@@ -21,6 +22,23 @@ public class User {
     private String password;
     private Skill[] skills;
 
+    /**
+     * Overrides lombok's getter getSkills.
+     * <p>
+     * Fixes further processing.
+     */
+    public Skill[] getSkills() {
+        if (skills == null) {
+            return new Skill[]{};
+        }
+        return skills;
+    }
+
+    /**
+     * Overrides lombok's method toString.
+     * <p>
+     * Fixes user's skills output.
+     */
     @Override
     public String toString() {
         return "User{" +

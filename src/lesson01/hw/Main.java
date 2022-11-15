@@ -26,7 +26,6 @@ public class Main {
 
         /* Getters */
         System.out.println("--------------------------");
-        System.out.println("New user created: " + user);
         System.out.println("New user created with ID: " + user.getId());
         System.out.println("..and with Name: " + user.getName());
         System.out.println("..and with Skills: " + Arrays.toString(user.getSkills()));
@@ -35,7 +34,7 @@ public class Main {
         User user1 = new User.UserBuilder()
                 .id(2)
                 .name("SecondUser")
-                .name("passsss")
+                .password("passsss")
                 .skills(new Skill[]{
                         new Skill(1, "js"),
                         new Skill(2, "java"),
@@ -44,7 +43,7 @@ public class Main {
                 .build();
 
         System.out.println("--------------------------");
-        System.out.println("New user1 created: " + user1);
+        System.out.println("New user created: " + user1);
 
         /* ArrayList */
         ArrayList<User> workers = new ArrayList<>();
@@ -59,6 +58,29 @@ public class Main {
 
         System.out.println("--------------------------");
         System.out.println("New Company created: " + company);
+
+        User userJunior = new User.UserBuilder()
+                .id(3)
+                .name("Junior")
+                .build();
+        company.getWorkers().add(userJunior); /* Changes list of this company */
+
+        System.out.println("--------------------------");
+        System.out.println("New worker \"" + userJunior.getName()
+                + "\" added to \"" + company.getName() + "\".");
+        System.out.println("All workers and their skills:");
+
+        /* Foreach */
+        for (User worker : company.getWorkers()) {
+            System.out.println("Worker #" + worker.getId() + ", " + worker.getName());
+
+            for (Skill skill : worker.getSkills()) {
+                System.out.println("\tSkill #" + skill.getId() + ", " + skill.getName());
+            }
+        }
+
+        System.out.println("--------------------------");
+        System.out.println("End of testing.");
     }
 
 }
