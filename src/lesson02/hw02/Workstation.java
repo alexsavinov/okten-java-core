@@ -13,7 +13,7 @@ public class Workstation extends Laptop {
 
     @Override
     public String toString() {
-        return "Comics{" +
+        return "Workstation{" +
                 "processor='" + super.getProcessor() + '\'' +
                 ", memory='" + super.getMemory() + '\'' +
                 ", battery='" + super.getBattery() + '\'' +

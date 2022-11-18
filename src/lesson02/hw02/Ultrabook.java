@@ -13,7 +13,7 @@ public class Ultrabook extends Laptop {
 
     @Override
     public String toString() {
-        return "Magazine{" +
+        return "Ultrabook{" +
                 "processor='" + super.getProcessor() + '\'' +
                 ", memory='" + super.getMemory() + '\'' +
                 ", battery='" + super.getBattery() + '\'' +

@@ -8,14 +8,14 @@ public class Main {
         pc.setProcessor("i7");
         pc.setMemory("32Gb");
         System.out.println("----------------------------");
-        System.out.println("Papirus created: " + pc);
+        System.out.println("PC created: " + pc);
 
         Laptop laptop = new Laptop();
         laptop.setProcessor("i3");
         laptop.setMemory("8Gb");
         laptop.setBattery("100Ah");
         System.out.println("----------------------------");
-        System.out.println("Book created: " + laptop);
+        System.out.println("Laptop created: " + laptop);
 
         Ultrabook ultrabook = new Ultrabook();
         ultrabook.setProcessor("m1");
@@ -23,7 +23,7 @@ public class Main {
         ultrabook.setBattery("50Ah");
         ultrabook.setWeight(1);
         System.out.println("----------------------------");
-        System.out.println("Magazine created: " + ultrabook);
+        System.out.println("Ultrabook created: " + ultrabook);
 
         Workstation workstation = new Workstation();
         workstation.setProcessor("i9");
@@ -31,6 +31,6 @@ public class Main {
         workstation.setBattery("100Ah");
         workstation.setFormat("ATX");
         System.out.println("----------------------------");
-        System.out.println("Comics created: " + workstation);
+        System.out.println("Workstation created: " + workstation);
     }
 }

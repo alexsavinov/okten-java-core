@@ -13,7 +13,7 @@ public class Laptop extends PC{
 
     @Override
     public String toString() {
-        return "Book{" +
+        return "Laptop{" +
                 "processor='" + super.getProcessor() + '\'' +
                 ", memory='" + super.getMemory() + '\'' +
                 ", battery='" + battery + '\'' +
