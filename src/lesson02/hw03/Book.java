@@ -1,4 +1,4 @@
-package lesson02.hw02;
+package lesson02.hw03;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,17 +7,16 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Workstation extends Laptop {
+public class Book extends Papirus {
 
-    private String format;
+    private String battery;
 
     @Override
     public String toString() {
-        return "Comics{" +
+        return "Book{" +
                 "processor='" + super.getProcessor() + '\'' +
                 ", memory='" + super.getMemory() + '\'' +
-                ", battery='" + super.getBattery() + '\'' +
-                ", format='" + format + '\'' +
+                ", battery='" + battery + '\'' +
                 '}';
     }
 }

@@ -1,4 +1,4 @@
-package lesson02.hw02;
+package lesson02.hw03;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PC {
+public class Papirus {
 
     private String processor;
     private String memory;
