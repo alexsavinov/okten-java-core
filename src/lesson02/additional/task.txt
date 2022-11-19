@@ -1,36 +1,3 @@
-створити клас, який би описував подібні об'єкти
-https://jsonplaceholder.typicode.com/users/1
-
-
-Створити та описати наступну їєрархію
-PC-Laptop-Ultrabook
-PC-Laptop- Workstation
-Загальна кількість вкористаних класів - 4!
-
-
-Cтворити клас ланцюг наслідування:
-Папірус-Кинга-Журнал
-Папірус-Книга-Комікс
-Кількість полів довільна.
-
-
-Створити клас котрий відповідає наступній моделі
-{
-    id: 1,
-    name: 'vasya',
-    surname: 'pupkin',
-    email: 'asd@asd.com',
-    age: 31,
-    gender: 'MALE',
-    skills: [{title: 'java', exp: 10}, {title: 'js', exp: 10}, {title: 'c++', exp: 10}],
-    car: {model: 'toyota', year: 2021, power: 250}
-}
-Використати композицію/агрегацію та енуми в потрібному місці.
-
-
-
-
-
 ***Additional***
 Є об'єкти постів:
 {
@@ -51,6 +18,10 @@ Cтворити клас ланцюг наслідування:
 "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
 "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
 }
+
+
+
+
 
 Є об'єкти коментарів до цих постів
 {
