@@ -9,15 +9,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Magazine extends Book {
 
-    private int weight;
+    private String title;
 
     @Override
     public String toString() {
         return "Magazine{" +
-                "processor='" + super.getProcessor() + '\'' +
-                ", memory='" + super.getMemory() + '\'' +
-                ", battery='" + super.getBattery() + '\'' +
-                ", weight='" + weight + '\'' +
+                "color='" + super.getColor() + '\'' +
+                ", pages='" + getPages() + '\'' +
+                ", title='" + title + '\'' +
                 '}';
     }
 }

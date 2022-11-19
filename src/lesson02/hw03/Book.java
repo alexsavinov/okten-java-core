@@ -7,16 +7,15 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Book extends Papirus {
+public class Book extends Papyrus {
 
-    private String battery;
+    private int pages;
 
     @Override
     public String toString() {
         return "Book{" +
-                "processor='" + super.getProcessor() + '\'' +
-                ", memory='" + super.getMemory() + '\'' +
-                ", battery='" + battery + '\'' +
+                "color='" + super.getColor() + '\'' +
+                ", pages='" + getPages() + '\'' +
                 '}';
     }
 }

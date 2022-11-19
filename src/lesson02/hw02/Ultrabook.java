@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Ultrabook extends Laptop {
 
-    private int weight;
+    private double weight;
 
     @Override
     public String toString() {

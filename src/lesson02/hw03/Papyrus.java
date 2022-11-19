@@ -7,8 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Papirus {
+public class Papyrus {
 
-    private String processor;
-    private String memory;
+    private String color;
 }

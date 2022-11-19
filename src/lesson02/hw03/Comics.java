@@ -9,15 +9,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Comics extends Book {
 
-    private String format;
+    private String series;
 
     @Override
     public String toString() {
         return "Comics{" +
-                "processor='" + super.getProcessor() + '\'' +
-                ", memory='" + super.getMemory() + '\'' +
-                ", battery='" + super.getBattery() + '\'' +
-                ", format='" + format + '\'' +
+                "color='" + super.getColor() + '\'' +
+                ", pages='" + getPages() + '\'' +
+                ", series='" + series + '\'' +
                 '}';
     }
 }

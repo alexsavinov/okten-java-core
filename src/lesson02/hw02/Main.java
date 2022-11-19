@@ -21,7 +21,7 @@ public class Main {
         ultrabook.setProcessor("m1");
         ultrabook.setMemory("16Gb");
         ultrabook.setBattery("50Ah");
-        ultrabook.setWeight(1);
+        ultrabook.setWeight(1.1);
         System.out.println("----------------------------");
         System.out.println("Ultrabook created: " + ultrabook);
 
