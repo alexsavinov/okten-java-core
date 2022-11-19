@@ -28,7 +28,7 @@ public class Main {
         System.out.println("--------------------------");
         System.out.println("New user created with ID: " + user.getId());
         System.out.println("..and with Name: " + user.getName());
-        System.out.println("..and with Skills: " + Arrays.toString(user.getSkills()));
+        System.out.println("..and with Skill: " + Arrays.toString(user.getSkills()));
 
         /* Builder */
         User user1 = new User.UserBuilder()
@@ -68,7 +68,7 @@ public class Main {
         System.out.println("--------------------------");
         System.out.println("New worker \"" + userJunior.getName()
                 + "\" added to \"" + company.getName() + "\".");
-        System.out.println("All workers and their skills:");
+        System.out.println("All workers and their skill:");
 
         /* Foreach */
         for (User worker : company.getWorkers()) {

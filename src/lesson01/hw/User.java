@@ -5,7 +5,7 @@ import lombok.*;
 import java.util.Arrays;
 
 /**
- * User - has name and skills.
+ * User - has name and skill.
  * <p>
  * Class with lombok annotations.
  * <p>
@@ -23,7 +23,7 @@ public class User {
     private Skill[] skills;
 
     /**
-     * Overrides lombok's getter getSkills.
+     * Overrides lombok's getter getSkill.
      * <p>
      * Fixes further processing.
      */
@@ -37,7 +37,7 @@ public class User {
     /**
      * Overrides lombok's method toString.
      * <p>
-     * Fixes user's skills output.
+     * Fixes user's skill output.
      */
     @Override
     public String toString() {
@@ -45,7 +45,7 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
-                ", skills=" + Arrays.toString(getSkills()) +
+                ", skill=" + Arrays.toString(getSkills()) +
                 '}';
     }
 
