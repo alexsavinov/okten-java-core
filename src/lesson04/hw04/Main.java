@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        ZooClub zooClub = new ZooClub();
+
 //        ArrayList<Printable> printableList = new ArrayList<>();
 //
 //        printableList.add(new Book(1999, Publisher.BLOOMSBURY));
