@@ -1,8 +1,6 @@
 package lesson04.hw03;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
@@ -21,9 +19,6 @@ public class User implements Comparable<User> {
     private Car car;
 
     @Override
-//    public int compareTo(User o) {
-//        return this.getSkills().size() - o.getSkills().size();
-//    }
     public int compareTo(User o) {
         return this.getId() - o.getId();
     }

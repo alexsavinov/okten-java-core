@@ -23,23 +23,19 @@ public class Main {
         users.add(new User(9, "Glenna Reichert", 59));
         users.add(new User(10, "Clementina DuBuque", 33));
 
-        System.out.println(divider);
-        System.out.println("List of users -- sorted by age ASC:");
+        System.out.println(divider + "List of users -- sorted by age ASC:");
         users.sort(Comparator.comparingInt(User::getAge));
         users.forEach(System.out::println);
 
-        System.out.println(divider);
-        System.out.println("List of users -- sorted by age DESC:");
+        System.out.println(divider + "List of users -- sorted by age DESC:");
         users.sort((o1, o2) -> o2.getAge() - o1.getAge());
         users.forEach(System.out::println);
 
-        System.out.println(divider);
-        System.out.println("List of users -- sorted by name length ASC:");
+        System.out.println(divider + "List of users -- sorted by name length ASC:");
         users.sort(Comparator.comparingInt(o -> o.getName().length()));
         users.forEach(System.out::println);
 
-        System.out.println(divider);
-        System.out.println("List of users -- sorted by name length DESC:");
+        System.out.println(divider + "List of users -- sorted by name length DESC:");
         users.sort((o1, o2) -> o2.getName().length() - o1.getName().length());
         users.forEach(System.out::println);
     }

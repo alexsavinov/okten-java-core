@@ -32,8 +32,7 @@ public class Main {
         words.add("perferendis");
         words.add("quasi");
 
-        System.out.println(divider);
-        System.out.println("List of words -- sorted by alphabet ASC:");
+        System.out.println(divider + "List of words -- sorted by alphabet ASC:");
 
         words.sort(String::compareTo);
         words.forEach(System.out::println);

@@ -157,19 +157,15 @@ public class Main {
         userHashSet.removeIf(user -> user.getGender().equals(Gender.MALE));
 
         /* Print results */
-        System.out.println(divider);
-        System.out.println("HashSet of \"not MALE\" users:");
-        System.out.println(divider);
+        System.out.println(divider + "HashSet of \"not MALE\" users:");
         userHashSet.forEach(System.out::println);
 
 
         /* Creating a TreeSet based on a list of users */
-        TreeSet<User> userTreeSet = new TreeSet<>(users);
+        Set<User> userTreeSet = new TreeSet<>(users);
 
         /* Sort by number of skills and print results */
-        System.out.println(divider);
-        System.out.println("TreeSet of users sorted by number of skills:");
-        System.out.println(divider);
+        System.out.println(divider + "TreeSet of users sorted by number of skills:");
         userTreeSet.stream()
                 .sorted(Comparator.comparingInt(o -> o.getSkills().size()))
                 .forEach(System.out::println);
